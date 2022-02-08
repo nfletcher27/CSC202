@@ -18,3 +18,12 @@ therm1 = new thermostat();
 therm2 = new thermostat();
 
 therm2.furnace_on(); // accessing
+
+// arguments
+void method1() {
+  BankAccount ba1 = new BankAccount(350.00);
+  method2(ba1);
+}
+
+void method2(BankAccount acct) {
+}
