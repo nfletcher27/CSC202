@@ -27,3 +27,10 @@ void method1() {
 
 void method2(BankAccount acct) {
 }
+
+// Arrays
+int[] intArray = new int[100]; // creates and assigns size to new array
+
+temp = intArray[3];
+intArray[7] = 66;
+
