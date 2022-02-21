@@ -9,4 +9,12 @@ if number1*number2 < 50:
 else:
     print("The numbers you gave were " + str(number1) + " and " + str(number2) + ", and their product is " + str(number1*number2) + ", which is equal to or greater than 50")
 
+counter = 100
+miles = 1000.0
+name = "John"
+
+a = b = c = 1 # Multi assignement
+
+a, b, c = 1, 2, "John" # Seperate multi assignment
+
 
