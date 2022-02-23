@@ -14,3 +14,30 @@ public void selectionSort(int arr[]) {
 		arr[i] = temp;
 	}	
 }
+
+// Testing
+import java.util.Arrays;
+
+public class SelectionSort {
+    
+    public static void main(String[] args) {
+    
+        int[] test = {9, 8, 7, 6, 5, 4, 3};
+        sort(test);
+        System.out.println(Arrays.toString(test));
+
+    }
+    public static void sort(int[] nums) {
+        int len = nums.length;
+        for(int i = 0; i < len-1; i++) {
+            int min = i;
+            for(int j = i+1; j < len; j++)
+                if(nums[j] < nums[min])
+                min = j;
+            
+            int temp = nums[min];
+            nums[min] = nums[i];
+            nums[i] = temp;
+        }
+    }
+}
