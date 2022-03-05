@@ -28,3 +28,9 @@ def diff21(n):
 def missing_char(str, n):
  return str[:n] + str[n+1:]
  
+# pos_neg
+def pos_neg(a, b, negative):
+  if negative:
+    return a < 0 and b < 0
+  else:
+    return (a < 0 and b > -1) or (b < 0 and a > -1)
