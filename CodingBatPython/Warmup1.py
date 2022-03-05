@@ -34,3 +34,7 @@ def pos_neg(a, b, negative):
     return a < 0 and b < 0
   else:
     return (a < 0 and b > -1) or (b < 0 and a > -1)
+
+# makes10
+def makes10(a, b):
+  return (a == 10 or b == 10) or (a+b == 10)
