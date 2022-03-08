@@ -23,8 +23,8 @@ public int triangle(int rows) {
 
 // bunnyEars2
 public int bunnyEars2(int bunnies) {
-  if(bunnies == 0) return 0;
-  if(bunnies == 1) return 2;
-  if(bunnies % 2 == 0) return bunnyEars2(bunnies-1) + 3;
-  return bunnyEars2(bunnies-1) + 2;
+  if(bunnies == 0) return 0; // no bunnies returns nothing
+  if(bunnies == 1) return 2; // odd number returns 2 bunnies
+  if(bunnies % 2 == 0) return bunnyEars2(bunnies-1) + 3; // gives our total count + 3 for our even count
+  return bunnyEars2(bunnies-1) + 2; // same as above but 2 instead for odd amount
 }
