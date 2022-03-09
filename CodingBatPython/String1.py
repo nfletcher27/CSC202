@@ -11,3 +11,6 @@ def non_start(a, b):
 def first_half(str):
   return str[0:(len(str))/2]
 
+# extra_end
+def extra_end(str):
+  return str[len(str)-2:] + str[len(str)-2:] + str[len(str)-2:]
