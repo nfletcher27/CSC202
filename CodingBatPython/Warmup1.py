@@ -45,3 +45,10 @@ def sum_double(a, b):
     return (a+b)*2
   else:
     return a+b
+
+# front3
+def front3(str):
+  if(len(str) < 3):
+    return str[0:] + str[0:] + str[0:]
+  else:
+    return str[0:3] + str[0:3] + str[0:3]
