@@ -52,3 +52,8 @@ def front3(str):
     return str[0:] + str[0:] + str[0:]
   else:
     return str[0:3] + str[0:3] + str[0:3]
+
+# near_hundred
+def near_hundred(n):
+  return (n > 189 and n < 211) or (n > 89 and n < 111)
+  
