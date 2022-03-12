@@ -62,3 +62,10 @@ def front_back(str):
   if(len(str) == 1):
     return str
   return str[len(str)-1:len(str)] + str[1:len(str)-1] + str[0:1]
+
+# not_string
+def not_string(str):
+  if str[0:3] == "not":
+    return str
+  else:
+    return "not " + str
