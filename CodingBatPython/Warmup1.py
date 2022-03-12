@@ -69,3 +69,9 @@ def not_string(str):
     return str
   else:
     return "not " + str
+
+# parrot_trouble
+def parrot_trouble(talking, hour):
+  if talking and (hour < 7 or hour > 20):
+    return True
+  return False
