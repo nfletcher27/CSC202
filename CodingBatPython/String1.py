@@ -22,3 +22,7 @@ def make_abba(a, b):
 # makeoutword
 def make_out_word(out, word):
   return out[0:len(out)/2] + word + out[len(out)/2:]
+
+# lefttwo
+def left2(str):
+  return str[2:len(str)] + str[0:2]
