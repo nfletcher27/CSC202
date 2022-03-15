@@ -14,3 +14,7 @@ def first_half(str):
 # extra_end
 def extra_end(str):
   return str[len(str)-2:] + str[len(str)-2:] + str[len(str)-2:]
+
+# abba
+def make_abba(a, b):
+  return a + b + b + a
