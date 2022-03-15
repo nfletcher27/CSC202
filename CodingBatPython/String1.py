@@ -26,3 +26,8 @@ def make_out_word(out, word):
 # lefttwo
 def left2(str):
   return str[2:len(str)] + str[0:2]
+
+# withoutend
+def without_end(str):
+  return str[1:len(str)-1]
+  
