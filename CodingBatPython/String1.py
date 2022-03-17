@@ -34,3 +34,10 @@ def without_end(str):
 # make_tags
 def make_tags(tag, word):
   return "<"+tag+">"+word+"</"+tag+">"
+
+# first_two
+def first_two(str):
+  if len(str) < 2:
+    return str
+  else:
+    return str[0:2]
