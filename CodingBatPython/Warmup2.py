@@ -9,3 +9,10 @@ def string_times(str, n):
     ret += str
   
   return ret
+
+# string_splosion
+def string_splosion(str):
+  st = ""
+  for i in range(len(str)+1):
+    st += str[0:i]
+  return st
