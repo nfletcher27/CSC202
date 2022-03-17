@@ -31,3 +31,6 @@ def left2(str):
 def without_end(str):
   return str[1:len(str)-1]
   
+# make_tags
+def make_tags(tag, word):
+  return "<"+tag+">"+word+"</"+tag+">"
