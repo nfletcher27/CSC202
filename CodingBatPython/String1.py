@@ -41,3 +41,10 @@ def first_two(str):
     return str
   else:
     return str[0:2]
+
+# combo_string
+def combo_string(a, b):
+  if len(a) > len(b):
+    return b+a+b
+  else:
+    return a+b+a
