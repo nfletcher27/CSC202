@@ -20,3 +20,10 @@ def reverse3(nums):
   nums[0] = nums[2]
   nums[2] = swap
   return nums
+
+# middle_way
+def middle_way(a, b):
+  middle = []
+  middle.append(a[1])
+  middle.append(b[1])
+  return middle
