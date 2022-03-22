@@ -27,3 +27,9 @@ def middle_way(a, b):
   middle.append(a[1])
   middle.append(b[1])
   return middle
+
+# same_first_last
+def same_first_last(nums):
+  if(len(nums) > 0):
+    return (nums[0] == nums[len(nums)-1])
+  return False
