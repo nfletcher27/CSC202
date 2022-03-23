@@ -54,3 +54,9 @@ def sum2(nums):
     return nums[0]
   else:
     return nums[0] + nums[1]
+
+# has23
+def has23(nums):
+  if 2 in nums or 3 in nums:
+    return True
+  return False
