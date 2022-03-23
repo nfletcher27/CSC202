@@ -37,3 +37,11 @@ def same_first_last(nums):
 # make_pi
 def make_pi():
   return [3, 1, 4]
+
+# rotate_left3
+def rotate_left3(nums):
+  temp = nums[1]
+  nums[1] = nums[2]
+  nums[2] = nums[0]
+  nums[0] = temp
+  return nums
