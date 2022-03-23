@@ -45,3 +45,12 @@ def rotate_left3(nums):
   nums[2] = nums[0]
   nums[0] = temp
   return nums
+
+# sum2
+def sum2(nums):
+  if len(nums) == 0:
+    return 0
+  if len(nums) < 2:
+    return nums[0]
+  else:
+    return nums[0] + nums[1]
