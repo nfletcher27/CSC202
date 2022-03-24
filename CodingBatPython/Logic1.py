@@ -32,3 +32,9 @@ def caught_speeding(speed, is_birthday):
   else:
     return 2
   
+# in1to10
+def in1to10(n, outside_mode):
+  if outside_mode:
+    return n > 9 or n < 2
+  else:
+    return n < 11 and n > 0
