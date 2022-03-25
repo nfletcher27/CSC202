@@ -16,3 +16,12 @@ def string_splosion(str):
   for i in range(len(str)+1):
     st += str[0:i]
   return st
+
+# array_front9
+def array_front9(nums):
+  for i in range(len(nums)):
+    if nums[i] == 9:
+      return True
+    if nums[i] == 4:
+      return False
+  return False
