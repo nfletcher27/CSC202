@@ -38,3 +38,12 @@ def in1to10(n, outside_mode):
     return n > 9 or n < 2
   else:
     return n < 11 and n > 0
+
+# date_fashion
+def date_fashion(you, date):
+  if you <= 2 or date <= 2:
+    return 0
+  elif you >= 8 or date >= 8:
+    return 2
+  else:
+    return 1
