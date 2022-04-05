@@ -25,3 +25,16 @@ def array_front9(nums):
     if nums[i] == 4:
       return False
   return False
+
+# front_times
+def front_times(str, n):
+  if len(str) < 4:
+    retStr = ""
+    for i in range(n):
+      retStr += str
+    return retStr
+  else:
+    retStr = ""
+    for i in range(n):
+      retStr += str[0:3]
+    return retStr
