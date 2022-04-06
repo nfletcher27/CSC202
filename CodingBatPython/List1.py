@@ -65,7 +65,7 @@ def has23(nums):
 def sum3(nums):
   return nums[0] + nums[1] + nums[2]
 
-# max
+# max_end3
 def max_end3(nums):
   if nums[0] > nums[2]:
     for i in range(len(nums)-1):
