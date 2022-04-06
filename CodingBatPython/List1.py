@@ -60,3 +60,7 @@ def has23(nums):
   if 2 in nums or 3 in nums:
     return True
   return False
+
+# sum3
+def sum3(nums):
+  return nums[0] + nums[1] + nums[2]
