@@ -38,3 +38,12 @@ def front_times(str, n):
     for i in range(n):
       retStr += str[0:3]
     return retStr
+
+# array_count9
+def array_count9(nums):
+  counter = 0
+  for i in nums:
+    if i is 9:
+      counter += 1
+      
+  return counter
