@@ -76,3 +76,8 @@ def max_end3(nums):
       nums[1] = nums[2]
       nums[i] = nums[2]
   return nums
+
+# make_ends
+def make_ends(nums):
+  nums2 = [nums[0], nums[len(nums)-1]]
+  return nums2
