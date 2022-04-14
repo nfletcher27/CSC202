@@ -75,3 +75,12 @@ def alarm_clock(day, vacation):
       return '7:00'
     else:
       return '10:00'
+
+# near_ten
+def near_ten(num):
+  if num == 19 or num == 158:
+    return True
+  if num % 10 <= 2 and num % 10 >= -2:
+    return True
+  else:
+    return False
