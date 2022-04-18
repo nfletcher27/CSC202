@@ -63,3 +63,17 @@ def array123(nums):
       return True
   
   return False
+
+# string_match
+def string_match(a, b):
+  matchCount = 0
+  if len(a) > len(b):
+    for i in range(len(a)-1):
+      if a[i:i+2] == b[i:i+2]:
+        matchCount += 1
+  else:
+    for i in range(len(b)-1):
+      if a[i:i+2] == b[i:i+2]:
+        matchCount += 1
+      
+  return matchCount
