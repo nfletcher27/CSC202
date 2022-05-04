@@ -158,3 +158,41 @@ public class Recursion {
         mergeSort(mergeTesting, 0, mergeTesting.length - 1);
     }
 }
+
+package com.nfletcher;
+
+import dsa.LinkedList;
+
+import static dsa.LinkedList.insert;
+
+// Linked Lists
+public class Algorithms {
+
+
+    public static Node reverseList(Node head) {
+        if(head == null || head.getNext() == null) return head;
+        Node p = reverseList(head.getNext());
+        head.getNext().getNext().setData(head.getData());
+        head.getNext().setData(null);
+        return p;
+    }
+
+    public Node SortedMerge(Node a, Node b) {
+        if(a == null) return b;
+        if(b == null) return a;
+
+        if(Integer.parseInt(a.getData()) > Integer.parseInt(b.getData())) {
+            a.getNext().setData(SortedMerge(a.getNext(), b));
+            return a;
+        } else {
+            b.getNext() = SortedMerge(a, b.getNext());
+            return b;
+        }
+    }
+
+    public static void main(String [] args) {
+
+        LinkedList list = new LinkedList();
+        insert(list, 22);
+    }
+}
