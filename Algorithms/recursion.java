@@ -166,6 +166,13 @@ import dsa.LinkedList;
 import static dsa.LinkedList.insert;
 
 // Linked Lists
+package com.nfletcher;
+
+import dsa.LinkedList;
+
+import static dsa.LinkedList.insert;
+
+// Linked Lists, Binary Trees, Graphs
 public class Algorithms {
 
 
@@ -177,17 +184,31 @@ public class Algorithms {
         return p;
     }
 
-    public Node SortedMerge(Node a, Node b) {
-        if(a == null) return b;
-        if(b == null) return a;
-
-        if(Integer.parseInt(a.getData()) > Integer.parseInt(b.getData())) {
-            a.getNext().setData(SortedMerge(a.getNext(), b));
-            return a;
-        } else {
-            b.getNext() = SortedMerge(a, b.getNext());
-            return b;
+    public Node insertNode(Node head, String data) {
+        if(head == null) {
+            head = new Node("");
+            head.setData(head, data);
+            return head;
         }
+        if(head.getData() < data) {
+            head.right = insertNode(head.right, data);
+        } else {
+            head.left = insertNode(head.left, data);
+        }
+        return head;
+    }
+
+    public static void printLeaves(Node root) {
+        if(root.getData().equals(null)) return;
+
+        if(root.left = null && root.right == null) {
+            System.out.println(root.getData() + ", ");
+            return;
+        }
+        if(root.left != null)
+            printLeaves(root.left);
+        if(root.right != null)
+            printLeaves(root.right);
     }
 
     public static void main(String [] args) {
@@ -196,3 +217,4 @@ public class Algorithms {
         insert(list, 22);
     }
 }
+
