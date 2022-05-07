@@ -33,3 +33,20 @@ def fix_teen(n):
       return 0
   else:
     return n
+  
+# makeBricks
+def make_bricks(small, big, goal):
+  big *= 5
+  if big == goal:
+    return True
+  if small == goal:
+    return True
+  if big % goal + small >= goal:
+    return True
+  if 5 + small >= goal and big > 0:
+    return True
+  if 10 + small == goal and big > 1:
+    return True
+  
+  return False
+
